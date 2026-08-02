@@ -28,17 +28,21 @@ Esta implementação utiliza a linguagem **Rust** para garantir **alta performan
 
 O projeto foi organizado seguindo as melhores práticas de modularização do ecossistema Rust:
 
-```text
+```
 geo-explorer/
 ├── data/
-│   └── trails.json          # Base de dados em formato JSON
+│ └── trails.json # Base de dados em formato JSON
 ├── src/
-│   ├── main.rs              # Ponto de entrada CLI e parsing de argumentos
-│   ├── models.rs            # Structs de dados e métodos de leitura JSON
-│   ├── commands.rs          # Implementação das regras de negócio
-│   └── mcp/                 # Módulo de integração MCP
-│       └── server.rs
-├── tests/                   # Testes automatizados de integração
-├── Cargo.toml               # Dependências e manifesto do projeto
+│ ├── main.rs # Ponto de entrada CLI e parsing de argumentos
+│ ├── models.rs # Structs de dados e métodos de leitura JSON
+│ ├── commands.rs # Implementação das regras de negócio
+│ └── mcp/ # Módulo de integração MCP
+│ └── server.rs
+├── tests/ # Testes automatizados de integração
+├── Cargo.toml # Dependências e manifesto do projeto
 └── README.md
 ```
+
+Maneira de execucao:
+cargo run (no geral com base de geo-explorer), depois - cargo run -- trilha rust, e assim successiva com os outros subcomandos.
+No caso de MCP, deve iniciar o terminal primeiro com cargo run -- mcp, e deixa correndo. Entao, abre um outro terminal para ver o output com - echo '{"jsonrpc":"2.0","id":2,"method":"get_trail","params":{"name":"react"}}' | cargo run -- mcp
