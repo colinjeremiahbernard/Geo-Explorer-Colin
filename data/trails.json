@@ -1,0 +1,32 @@
+{
+  "techs": {
+    "rust": {
+      "name": "Rust Systems Programming",
+      "levels": ["iniciante", "intermediario", "avancado"],
+      "modules": [
+        "1. Ownership e Borrowing",
+        "2. Structs e Enums",
+        "3. Traits e Generics",
+        "4. Async/Await e Tokio"
+      ],
+      "challenges": {
+        "iniciante": "Escreva uma função que receba uma String e retorne o número de vogais sem clonar a memória.",
+        "intermediario": "Implemente um padrão de design 'Builder' usando Lifetimes explícitos.",
+        "avancado": "Crie uma queue thread-safe usando `Arc<Mutex<T>>` e Canais MPSC."
+      }
+    },
+    "javascript": {
+      "name": "JavaScript Fullstack",
+      "levels": ["iniciante", "intermediario"],
+      "modules": [
+        "1. Event Loop e Assincronismo",
+        "2. Manipulação de DOM",
+        "3. Node.js & Express"
+      ],
+      "challenges": {
+        "iniciante": "Crie uma função que inverta uma string sem usar `.reverse()`.",
+        "intermediario": "Implemente um algoritmo de Cache LRU simples."
+      }
+    }
+  }
+}

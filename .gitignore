@@ -1,0 +1,18 @@
+# Compilação do Rust
+/target
+**/*.rs.bk
+
+# Arquivos de ambiente e segredos (Segurança)
+.env
+*.pem
+*.key
+
+# IDEs e Editores de código
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
