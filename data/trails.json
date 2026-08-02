@@ -27,6 +27,38 @@
         "iniciante": "Crie uma função que inverta uma string sem usar `.reverse()`.",
         "intermediario": "Implemente um algoritmo de Cache LRU simples."
       }
+    },
+    "react": {
+      "name": "React Frontend Development",
+      "levels": ["iniciante", "intermediario", "avancado"],
+      "modules": [
+        "1. Componentes e JSX",
+        "2. Estado e Props",
+        "3. Hooks (useState, useEffect)",
+        "4. Context API e Redux",
+        "5. Server Components e Suspense"
+      ],
+      "challenges": {
+        "iniciante": "Crie um componente que exiba uma lista de tarefas e permita adicionar novos itens.",
+        "intermediario": "Implemente um contador com `useReducer` e persistência em LocalStorage.",
+        "avancado": "Construa uma aplicação com roteamento dinâmico e carregamento assíncrono de dados."
+      }
+    },
+    "typescript": {
+      "name": "TypeScript Strongly Typed JS",
+      "levels": ["iniciante", "intermediario", "avancado"],
+      "modules": [
+        "1. Tipos Básicos e Interfaces",
+        "2. Generics e Utility Types",
+        "3. Type Narrowing e Guards",
+        "4. Decorators e Metadata",
+        "5. Integração com Frameworks (React, Node)"
+      ],
+      "challenges": {
+        "iniciante": "Defina uma interface para representar um usuário e crie uma função que receba esse objeto.",
+        "intermediario": "Implemente uma função genérica que filtre arrays com base em um predicado tipado.",
+        "avancado": "Crie um sistema de plugin usando Decorators e tipos avançados."
+      }
     }
   }
 }
